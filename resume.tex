@@ -1,0 +1,277 @@
+%-------------------------
+% Resume in Latex
+% Author: Sami Warraich
+% Based off of: https://github.com/sb2nov/resume
+% License: MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-3pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    \textbf{\Huge \scshape Sami Ullah Warraich} \\ \vspace{1pt}
+    \small +966583490073 $|$ \href{mailto:samiwarraich51@gmail.com}{\underline{samiwarraich51@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/sami-warraich}{\underline{LinkedIn}} $|$
+    \href{https://github.com/samiwarraich}{\underline{GitHub}} 
+    % $|$ \href{https://samiwarraich.github.io/}{\underline{Portfolio}}
+\end{center}
+
+
+%-----------OBJECTIVE-----------
+
+\section{Objective}
+     \resumeItemListStart
+        \resumeItem{I am seeking a challenging position and a lively work environment where I can grow personally and contribute to the company’s growth using my excellent communication, technical and organizational skills.}\vspace{-10pt}
+    \resumeItemListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Gujrat Institute of Management Sciences (PMAS AAUR)}{Gujrat, Pakistan}
+      {Bachelor of Science (Computer Science)}{2016-2021}
+  \resumeSubHeadingListEnd
+
+
+%-----------PROFESSIONAL EXPERIENCE-----------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Gigalabs}{2021-2022}{}{}\vspace{-12pt}
+      \resumeSubSubheading{Project based on Plaid}{}
+      \resumeItemListStart
+        \resumeItem{Worked in React.js.}
+        \resumeItem{Transaction and Inventory Management System. (Client did not disclose the name of the project)}
+    \resumeItemListEnd
+    \resumeSubSubheading{Furniture Bank, California Office}{}
+      \resumeItemListStart
+        \resumeItem{Worked in Next.js and MongoDB.}
+        \resumeItem{The website aims to connect people with excess furniture with financially challenged people in need of furniture.}
+    \resumeItemListEnd
+    \resumeSubSubheading{Bukit}{}
+      \resumeItemListStart
+        \resumeItem{Worked in Next.js, Express.js, and MongoDB.}
+        \resumeItem{Bukit is a marketplace that connects end-users through an aggregator to operators via white-labeled SaaS technology.}
+    \resumeItemListEnd
+    \resumeSubSubheading{New York Adventure Club}{}
+      \resumeItemListStart
+        \resumeItem{Worked in React.js and Express.js.}
+        \resumeItem{NYAC is a tour company, which gives you insider access to the city’s best-kept secrets.}
+    \resumeItemListEnd
+    \resumeSubSubheading{Linesheets}{}
+      \resumeItemListStart
+        \resumeItem{Worked in React.js and Express.js.}
+        \resumeItem{Linesheets is an online platform allowing its users to customize and share their product collections.}
+    \resumeItemListEnd
+    \resumeSubheading
+      {Dabeeb}{2022-Present}{}{}\vspace{-12pt}
+      \resumeSubSubheading{Dabeeb}{}
+      \resumeItemListStart
+        \resumeItem{Worked in React Native, Express.js, and Hasura.}
+        \resumeItem{Dabeeb is a Saudi company specializing in renting scooters and bicycles for transportation in the Kingdom of Saudi Arabia.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+% \section{Projects}
+%     \resumeSubHeadingListStart
+%       \resumeProjectHeading
+%           {\textbf{\href{https://github.com/samiwarraich/bookit}{Bookit}} $|$ \emph{JavaScript, React, Next.js, MongoDB}}{}
+%           \resumeItemListStart
+%             \resumeItem{Hotel booking system.}
+%           \resumeItemListEnd
+%     \resumeSubHeadingListEnd
+
+
+%-----------PERSONAL PROJECTS-----------
+\section{Personal Projects}
+  \resumeSubHeadingListStart
+      \resumeSubheading
+      {Bookit}{}{}{}\vspace{-12pt}
+      \resumeItemListStart
+        \resumeItem{Worked in Next.js and MongoDB.}
+        \resumeItem{Hotel booking system.}
+    \resumeItemListEnd
+    \resumeSubheading
+    {Shopit}{}{}{}\vspace{-12pt}
+      \resumeItemListStart
+        \resumeItem{Worked in React.j, Express.js, and MongoDB.}
+        \resumeItem{Ecommerce Website.}
+    \resumeItemListEnd
+    \resumeSubheading
+    {EMS}{}{}{}\vspace{-12pt}
+      \resumeItemListStart
+        \resumeItem{Worked in React.js, Express.js, and Postgres.}
+        \resumeItem{Employee management system.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------ACADEMIC PROJECTS-----------
+\section{Acdemic Projects}
+  \resumeSubHeadingListStart
+      \resumeSubheading
+      {Find Friend (Final Year Project)}{}{}{}\vspace{-12pt}
+      \resumeItemListStart
+        \resumeItem{Worked in React Native and Firebase.}
+        \resumeItem{Users can chat with each other and see a friend's current location using google maps and draw travel routes.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PERSONAL SKILLS-----------
+\section{Personal Skills}
+      \resumeItemListStart
+        \resumeItem{Excellent analytical skills}
+        \resumeItem{Excellent problem solving skills}
+        \resumeItem{Team player}
+        \resumeItem{Social}\vspace{-10pt}
+    \resumeItemListEnd
+
+%-----------TOOLS & TECHNOLOGIES-----------
+\section{Tools \& Technologies}
+  \resumeSubHeadingListStart
+      \resumeSubheading
+      {Tools}{}{}{}\vspace{-12pt}
+      \resumeItemListStart
+        \resumeItem{VS Code, Git, Gitlab, Github, Postman, Firebase, Hasura, VMware, Linux, Visual Studio, MS SQL Server, Microsoft Office, Mattermost, Slack, Trello, Jira, and Asana.}
+    \resumeItemListEnd
+    \resumeSubheading
+    {Languages}{}{}{}\vspace{-12pt}
+      \resumeItemListStart
+        \resumeItem{JavaScript, Typescript,  React.js, Node.js, Express.js,  MongoDB, Postgres, HTML, Bootstrap, CSS, and SQL.}
+    \resumeItemListEnd
+    \resumeSubheading
+    {Framework}{}{}{}\vspace{-12pt}
+      \resumeItemListStart
+        \resumeItem{Next.js and React Native.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------INTERESTS-----------
+\section{Interests}
+      \resumeItemListStart
+        \resumeItem{Music and Gaming.}
+    \resumeItemListEnd
+
+%-----------REFERENCES-----------
+\section{References}
+    \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{}{Will be furnished on demand.} \\
+    }}
+ \end{itemize}
+      
+
+%-----------PROGRAMMING SKILLS-----------
+% \section{Technical Skills}
+%  \begin{itemize}[leftmargin=0.15in, label={}]
+%     \small{\item{
+%      \textbf{Languages}{: Java, Python, SQL (Postgres + MySQL), JavaScript, HTML/CSS, C/C++,} \\
+%      \textbf{Frameworks}{: Spring, React, Vue, Node.js, JUnit, WordPress } \\
+%      \textbf{Developer Tools}{: Linux, Git, Docker, NeoVim, VS Code, Visual Studio, IntelliJ, Eclipse} \\
+%     }}
+%  \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
