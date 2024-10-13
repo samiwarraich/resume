@@ -62,7 +62,7 @@
 %-------------------------
 % Custom commands
 \newcommand{\resumeItem}[1]{
-  \item\small{
+  \item[]\small{
     {#1 \vspace{-2pt}}
   }
 }
@@ -70,32 +70,21 @@
 \newcommand{\resumeSubheading}[4]{
   \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
+      \textbf{#1} &  {\small#2} \\
+      {\small#3} & {\small #4} \\
     \end{tabular*}\vspace{-6pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
+      \textbf{\small#1} & {\small #2} \\
     \end{tabular*}\vspace{-6pt}
 }
 
-\newcommand{\resumeProjectHeading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
-    \end{tabular*}\vspace{-5pt}
-}
-
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-3pt}}
-
-\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
-
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
 
 %-------------------------------------------
@@ -109,6 +98,7 @@
 \begin{center}
     \textbf{\Huge \scshape Sami Ullah Warraich} \\ \vspace{1pt}
     \small 
+    {\underline{Riyadh, Saudi Arabia}} $|$ 
     \href{https://wa.me/+966583490073}{\underline{+966583490073}} $|$ 
     \href{mailto:samiwarraich51@gmail.com}{\underline{samiwarraich51@gmail.com}} $|$ 
     \href{https://linkedin.com/in/samiwarra1ch}{\underline{LinkedIn}} $|$
@@ -117,20 +107,16 @@
 \end{center}
 
 
-%-----------OBJECTIVE-----------
+%-----------Professional Summary-----------
 
-\section{Objective}
-     \resumeItemListStart
-        \resumeItem{I am seeking a challenging position and a lively work environment where I can grow personally and contribute to the company’s growth using my excellent communication, technical and organizational skills.}\vspace{-10pt}
-    \resumeItemListEnd
+\section{Professional Summary}
+    \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     {Full Stack Developer with 3+ years of experience in building web and mobile applications. Specialized in React, React Native, and Node.js. Proven track record of delivering efficient and scalable solutions across diverse projects. Committed to continuous learning and innovation in software development.} 
+    }}
+ \end{itemize}
 
-%-----------EDUCATION-----------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Gujrat Institute of Management Sciences (PMAS AAUR)}{Gujrat, Pakistan}
-      {Bachelor of Science (Computer Science)}{2016-2021}
-  \resumeSubHeadingListEnd
+
 
 
 %-----------PROFESSIONAL EXPERIENCE-----------
@@ -138,136 +124,108 @@
   \resumeSubHeadingListStart
   \resumeSubheading
       {Software Engineer @ Dabeeb}{May 2022 - Present}{}{}\vspace{-12pt}
-      \resumeSubSubheading{Dabeeb}{}
+      \resumeSubSubheading{Dabeeb ARS}{}
       \resumeItemListStart
-        \resumeItem{Dabeeb is a Saudi company specializing in renting scooters and bicycles for transportation in the Kingdom of Saudi Arabia. Contributed to the development of both the backend and frontend of the Dabeeb app using React Native, Express.js, and Hasura.}
+        \resumeItem{Currently working on the frontend of an Expo mobile application for peer-to-peer accommodation rentals. Developing UI components and implementing features such as property listing, booking management, user reviews, and payment integration screens.}
+    \resumeItemListEnd
+      \resumeSubSubheading{Dabeeb FMS}{}
+      \resumeItemListStart
+        \resumeItem{Contributed to the frontend development of a web-based fleet management system using React.js. Implemented interactive dashboards for real-time vehicle tracking, maintenance scheduling, and performance analytics.}
+    \resumeItemListEnd
+      \resumeSubSubheading{Dabeeb ERP}{}
+      \resumeItemListStart
+        \resumeItem{Created a full-stack inventory management application with React Native frontend, Express.js and Hasura backend, integrating VendHQ API. Focused on enhancing system capabilities and streamlining operations across multiple branches.}
+    \resumeItemListEnd
+    \resumeSubSubheading{Dabeeb App}{}
+      \resumeItemListStart
+        \resumeItem{Developed a comprehensive mobile application using React Native, Express.js, and Hasura for scooter and bicycle rentals. Implemented robust user authentication, real-time availability tracking, and integrated secure payment processing.}
     \resumeItemListEnd
     \resumeSubheading
       {Jr. Software Engineer @ Gigalabs}{Feb 2021 - Mar 2022}{}{}\vspace{-12pt}
       \resumeSubSubheading{Linesheets}{}
       \resumeItemListStart
-        \resumeItem{Linesheets is an online platform allowing its users to customize and share their product collections. Contributed to the development of both the frontend and backend of the platform using React.js and Express.js.}
+        \resumeItem{Contributed to the development of an online platform for customizing and sharing product collections. Implemented key features using React.js for the frontend and Express.js for the backend, enhancing user experience and platform functionality.}
     \resumeItemListEnd
     \resumeSubSubheading{New York Adventure Club}{}
       \resumeItemListStart
-        \resumeItem{NYAC is a tour company that gives you insider access to the city’s best-kept secrets. Contributed to the development of both the frontend and backend of the platform using React.js and Express.js.}
+        \resumeItem{Worked on a tour company platform providing insider access to city secrets. Developed both frontend and backend components using React.js and Express.js, focusing on improving tour booking and management systems.}
     \resumeItemListEnd
     \resumeSubSubheading{Bukit}{}
       \resumeItemListStart
-        \resumeItem{Bukit is a marketplace that connects end-users through an aggregator to operators via white-labeled SaaS technology. Contributed to the development of both the frontend and backend of the platform using Next.js, Express.js, and MongoDB.}
+        \resumeItem{Developed components for a marketplace connecting end-users to operators via white-labeled SaaS technology. Utilized Next.js for the frontend, Express.js for the backend, and MongoDB for data management, contributing to a seamless aggregator experience.}
     \resumeItemListEnd
-    \resumeSubSubheading{Furniture Bank, California Office}{}
+    \resumeSubSubheading{Furniture Bank California}{}
       \resumeItemListStart
-        \resumeItem{The website aims to connect people with excess furniture with financially challenged people in need of furniture. Contributed to the development of both the frontend and backend of the platform using Next.js and MongoDB.}
+        \resumeItem{Developed a platform connecting people with excess furniture to those in need. Implemented frontend and backend solutions using Next.js and MongoDB, streamlining the furniture donation and distribution process.}
     \resumeItemListEnd
-      \resumeSubSubheading{Project based on Plaid}{}
+      \resumeSubSubheading{Financial Tracking System}{}
       \resumeItemListStart
-        \resumeItem{A system for managing transactions and inventory. Contributed to the development of the frontend of the platform using React.js. (Client did not disclose the name of the project)}
+        \resumeItem{Contributed to the frontend development of a transaction and inventory management system using React.js. Focused on creating intuitive interfaces for financial data visualization and management. (Client did not disclose the name of the project)}
     \resumeItemListEnd
   \resumeSubHeadingListEnd
 
-
-%-----------PROJECTS-----------
-% \section{Projects}
-%     \resumeSubHeadingListStart
-%       \resumeProjectHeading
-%           {\textbf{\href{https://github.com/samiwarraich/bookit}{Bookit}} $|$ \emph{JavaScript, React, Next.js, MongoDB}}{}
-%           \resumeItemListStart
-%             \resumeItem{Hotel booking system.}
-%           \resumeItemListEnd
-%     \resumeSubHeadingListEnd
+\section{Skills}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+    {Languages \& Frameworks}{}{}{}\vspace{-12pt}
+      \resumeItemListStart
+        \resumeItem{JavaScript, TypeScript, React.js, Next.js, React Native, Expo, Node.js, Express.js, GraphQL, HTML, CSS, Redux, Tailwind, Bootstrap, and SQL.}
+    \resumeItemListEnd
+    \resumeSubheading
+      {Tools \& Platforms}{}{}{}\vspace{-12pt}
+      \resumeItemListStart
+        \resumeItem{VS Code, Git, Gitlab, Github, Postman, Docker, MongoDB, PostgreSQL, Firebase, Vercel, Heroku, Hasura, Linux, Microsoft Office, Mattermost, Slack, Trello, Jira, and Asana.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
 
 
 %-----------PERSONAL PROJECTS-----------
 \section{Personal Projects}
   \resumeSubHeadingListStart
     \resumeSubheading
+    {Taskify}{}{}{}\vspace{-12pt}
+      \resumeItemListStart
+        \resumeItem{Developed a collaborative task management platform using Next.js and PostgreSQL. Implemented features for organization and board creation, card management with drag-and-drop functionality, and integrated payment processing.}
+    \resumeItemListEnd
+    \resumeSubheading
     {Pixel Muse}{}{}{}\vspace{-12pt}
       \resumeItemListStart
-        \resumeItem{Pixel Muse is a suite of bots that create and share random color pixel images on Twitter and Telegram platforms. Developed using Next.js and Node.js.}
+        \resumeItem{Developed a suite of automated bots using Next.js and Node.js for generating and distributing random color pixel images across Twitter and Telegram platforms. Implemented image generation algorithms and social media API integrations.}
     \resumeItemListEnd
     \resumeSubheading
     {Phanox}{}{}{}\vspace{-12pt}
       \resumeItemListStart
-        \resumeItem{Phanox is an e-commerce website that allows users to discover and purchase their favorite headphones with ease. Developed using Next.js, Sanity, and Stripe.}
+        \resumeItem{Developed a full-stack e-commerce platform specializing in headphone sales using Next.js, Sanity, and Stripe. Implemented features including product cataloging, user authentication, shopping cart functionality, and secure payment processing.}
     \resumeItemListEnd
       \resumeSubheading
       {Bookit}{}{}{}\vspace{-12pt}
       \resumeItemListStart
-        \resumeItem{Bookit is an online booking system that simplifies the reservation process for both guests and hotels. Developed the platform using Next.js, Stripe, and MongoDB.}
+        \resumeItem{Created an online reservation system using Next.js, Stripe, and MongoDB to streamline the booking process for hospitality businesses. Implemented real-time availability updates, user account management, and integrated payment gateway for seamless transactions.}
     \resumeItemListEnd
     \resumeSubheading
     {Shopit}{}{}{}\vspace{-12pt}
       \resumeItemListStart
-        \resumeItem{Shopit is a simple and fast online shopping platform that enables users to find and buy what they need with just a few clicks. Developed using React.js, Express.js, Stripe, and MongoDB.}
+        \resumeItem{Built an e-commerce application using React.js, Express.js, Stripe, and MongoDB. Developed features such as product search, filtering, user reviews, and order management to enhance the online shopping experience.}
     \resumeItemListEnd
   \resumeSubHeadingListEnd
 
+    %-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Gujrat Institute of Management Sciences (PMAS AAUR)}{Gujrat, Pakistan}
+      {Bachelor of Science (Computer Science)}{}
+  \resumeSubHeadingListEnd
+
 %-----------ACADEMIC PROJECTS-----------
-\section{Academic Projects}
+\section{Academic Project}
   \resumeSubHeadingListStart
       \resumeSubheading
       {Find Friend (Final Year Project)}{}{}{}\vspace{-12pt}
       \resumeItemListStart
-        \resumeItem{Find Friend is an app that allows users to chat with each other and see a friend’s current location using Google Maps and draw travel routes. Developed using React Native and Firebase.}
-    \resumeItemListEnd
-  \resumeSubHeadingListEnd
-
-%-----------PERSONAL SKILLS-----------
-\section{Personal Skills}
-      \resumeItemListStart
-        \resumeItem{Excellent analytical skills}
-        \resumeItem{Excellent problem solving skills}
-        \resumeItem{Team player}
-        \resumeItem{Social}\vspace{-10pt}
-    \resumeItemListEnd
-
-%-----------TOOLS & TECHNOLOGIES-----------
-\section{Tools \& Technologies}
-  \resumeSubHeadingListStart
-      \resumeSubheading
-      {Tools}{}{}{}\vspace{-12pt}
-      \resumeItemListStart
-        \resumeItem{VS Code, Git, Gitlab, Github, Postman, Docker, Firebase, Vercel, Heroku, Hasura, VMware, Linux, Microsoft Office, Mattermost, Slack, Trello, Jira, and Asana.}
-    \resumeItemListEnd
-    \resumeSubheading
-    {Languages}{}{}{}\vspace{-12pt}
-      \resumeItemListStart
-        \resumeItem{JavaScript, Typescript,  React.js, Node.js, Express.js,  MongoDB, PostgreSQL, GraphQL, HTML, CSS, Tailwind, Bootstrap, and SQL.}
-    \resumeItemListEnd
-    \resumeSubheading
-    {Frameworks}{}{}{}\vspace{-12pt}
-      \resumeItemListStart
-        \resumeItem{Next.js and React Native.}
+        \resumeItem{Developed a mobile application using React Native and Firebase for real-time chat and location sharing. Implemented features including user-to-user messaging, real-time location tracking with Google Maps integration, and route visualization.}
     \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 
-%-----------INTERESTS-----------
-\section{Interests}
-      \resumeItemListStart
-        \resumeItem{Music and Gaming.}
-    \resumeItemListEnd
-
-%-----------REFERENCES-----------
-\section{References}
-    \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{}{Will be furnished on demand.} \\
-    }}
- \end{itemize}
-      
-
-%-----------PROGRAMMING SKILLS-----------
-% \section{Technical Skills}
-%  \begin{itemize}[leftmargin=0.15in, label={}]
-%     \small{\item{
-%      \textbf{Languages}{: Java, Python, SQL (Postgres + MySQL), JavaScript, HTML/CSS, C/C++,} \\
-%      \textbf{Frameworks}{: Spring, React, Vue, Node.js, JUnit, WordPress } \\
-%      \textbf{Developer Tools}{: Linux, Git, Docker, NeoVim, VS Code, Visual Studio, IntelliJ, Eclipse} \\
-%     }}
-%  \end{itemize}
-
-
-%-------------------------------------------
 \end{document}
