@@ -73,11 +73,7 @@
             height: 100%;
             overflow: hidden;
         }
-        #pdf-container {
-            width: 100%;
-            height: 100%;
-        }
-        #pdf-object, #pdf-iframe {
+        #pdf-viewer {
             width: 100%;
             height: 100%;
             border: none;
@@ -86,24 +82,7 @@
 </head>
 
 <body>
-    <div id="pdf-container">
-        <object id="pdf-object" data="https://samiwarraich.github.io/resume/assets/Sami%20Ullah%20Warraich.pdf" type="application/pdf">
-            <iframe id="pdf-iframe" src="https://samiwarraich.github.io/resume/assets/Sami%20Ullah%20Warraich.pdf">
-                <p>This browser does not support PDFs. Please <a href="https://samiwarraich.github.io/resume/assets/Sami%20Ullah%20Warraich.pdf">download the PDF</a> to view it.</p>
-            </iframe>
-        </object>
-    </div>
-
-    <script>
-        // Check if PDF is loaded successfully
-        document.getElementById('pdf-object').addEventListener('load', function() {
-            var content = this.contentDocument;
-            if (content && content.body && content.body.childElementCount === 0) {
-                // If PDF didn't load in object, try iframe
-                document.getElementById('pdf-iframe').style.display = 'block';
-            }
-        });
-    </script>
+    <embed id="pdf-viewer" src="https://samiwarraich.github.io/resume/assets/Sami%20Ullah%20Warraich.pdf" type="application/pdf" />
 </body>
 
 </html>
