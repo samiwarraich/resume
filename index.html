@@ -63,31 +63,36 @@
               ]
             }
           }</script>
+          <script>
+    window.location.href = "Sami_Ullah_Warraich.pdf";
+  </script>
     <style>
-        html,
-        body {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            width: 100%;
-        }
-
-        iframe {
-            width: 100%;
-            height: 100vh;
-            border: none;
-        }
-
-        @media print {
-            iframe {
-                height: auto;
-            }
-        }
-    </style>
+    body {
+      font-family: sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background: #f9f9f9;
+    }
+    a {
+      text-decoration: none;
+      color: #0070f3;
+      font-weight: bold;
+    }
+  </style>
 </head>
 
 <body>
-    <iframe src="./public/Sami_Ullah_Warraich.pdf" title="Resume | Sami Warraich"></iframe>
+    <noscript>
+    <p>
+      JavaScript is disabled. Please
+      <a href="Sami_Ullah_Warraich.pdf" target="_blank" rel="noopener noreferrer">
+        click here to view the resume PDF
+      </a>.
+    </p>
+  </noscript>
 </body>
 
 </html>
