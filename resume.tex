@@ -1,5 +1,5 @@
 %--------------------------------------------------%
-% Resume in Latex                                  %
+% Resume in LaTeX                                  %
 % Author: Sami Warraich <samiwarraich51@gmail.com> %
 % License: MIT                                     %
 %--------------------------------------------------%
@@ -17,33 +17,23 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
+\usepackage{qrcode}
 \input{glyphtounicode}
 
-
-%----------FONT OPTIONS----------
-% sans-serif
-% \usepackage[sfdefault]{FiraSans}
-% \usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
-
-% serif
-% \usepackage{CormorantGaramond}
-% \usepackage{charter}
-
-
 \pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
+\fancyhf{}
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-% Adjust margins
+%----------Adjust margins----------
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
 \addtolength{\topmargin}{-.5in}
 \addtolength{\textheight}{1.0in}
+
+\setlength{\footskip}{4.1pt}
 
 \urlstyle{same}
 
@@ -51,181 +41,118 @@
 \raggedright
 \setlength{\tabcolsep}{0in}
 
-% Sections formatting
+%----------Sections formatting----------
 \titleformat{\section}{
   \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-% Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
 
-%-------------------------
-% Custom commands
-\newcommand{\resumeItem}[1]{
-  \item[]\small{
-    {#1 \vspace{-2pt}}
-  }
-}
-
+%----------Custom commands----------
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-1pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} &  {\small#2} \\
-      {\small#3} & {\small #4} \\
-    \end{tabular*}\vspace{-6pt}
+  \vspace{-2pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-7pt}
 }
-
 \newcommand{\resumeSubSubheading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textbf{\small#1} & {\small #2} \\
-    \end{tabular*}\vspace{-6pt}
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{\small#1} & \textit{\small #2} \\
+  \end{tabular*}\vspace{-7pt}
 }
-
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small#1 & #2 \\
+  \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
-%-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
+%----------Resume starts here----------
 \begin{document}
 
-%----------HEADING----------
-
-\begin{center}
-    \textbf{\Huge \scshape Sami Ullah Warraich} \\ \vspace{1pt}
-    \small 
-    {\underline{Riyadh, Saudi Arabia}} $|$ 
-    \href{https://wa.me/+966583490073}{\underline{+966583490073}} $|$ 
-    \href{mailto:samiwarraich51@gmail.com}{\underline{samiwarraich51@gmail.com}} $|$ 
-    \href{https://linkedin.com/in/samiwarra1ch}{\underline{LinkedIn}} $|$
-    \href{https://github.com/samiwarraich}{\underline{GitHub}} 
-    $|$ \href{https://sami.warraich.co}{\underline{Portfolio}}
-\end{center}
-
-
-%-----------Professional Summary-----------
-
-\section{Professional Summary}
-    \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     {Full Stack Developer with 3+ years of experience in building web and mobile applications. Specialized in React, React Native, and Node.js. Proven track record of delivering efficient and scalable solutions across diverse projects. Committed to continuous learning and innovation in software development.} 
-    }}
- \end{itemize}
+%----------Heading----------
+\noindent
+\begin{minipage}[c]{0.78\textwidth}
+  \centering
+  \textbf{\Huge Sami Ullah Warraich} \\[6pt]
+  \underline{Riyadh, Saudi Arabia} \textbar{}
+  \href{tel:+966583490073}{\underline{+966583490073}} \textbar{}
+  \href{mailto:sami@warraich.co}{\underline{sami@warraich.co}} \textbar{}
+  \href{https://linkedin.com/in/samiwarra1ch}{\underline{LinkedIn}} \textbar{} 
+  \href{https://github.com/samiwarraich}{\underline{GitHub}}
+\end{minipage}%
+\hfill
+\begin{minipage}[c]{0.2\textwidth}
+  \raggedleft
+  \vspace{-1em}
+  \qrcode[height=1in]{https://sami.warraich.co}
+\end{minipage}
 
 
 
+%----------Summary----------
+\section{Summary}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    Full Stack Developer with 4+ years of experience building scalable web and mobile applications. Expertise in React, React Native, Node.js, and modern development practices. Proven track record delivering efficient solutions across diverse projects with a focus on user experience and system performance.
+  }}
+\end{itemize}
 
-%-----------PROFESSIONAL EXPERIENCE-----------
-\section{Professional Experience}
-  \resumeSubHeadingListStart
-  \resumeSubheading
-      {Software Engineer @ Dabeeb}{May 2022 - Present}{}{}\vspace{-12pt}
-      \resumeSubSubheading{Dabeeb ARS}{}
-      \resumeItemListStart
-        \resumeItem{Currently working on the frontend of an Expo mobile application for peer-to-peer accommodation rentals. Developing UI components and implementing features such as property listing, booking management, user reviews, and payment integration screens.}
-    \resumeItemListEnd
-      \resumeSubSubheading{Dabeeb FMS}{}
-      \resumeItemListStart
-        \resumeItem{Contributed to the frontend development of a web-based fleet management system using React. Implemented interactive dashboards for real-time vehicle tracking, maintenance scheduling, and performance analytics.}
-    \resumeItemListEnd
-      \resumeSubSubheading{Dabeeb ERP}{}
-      \resumeItemListStart
-        \resumeItem{Created a full-stack inventory management application with React Native frontend, Express.js and Hasura backend, integrating VendHQ API. Focused on enhancing system capabilities and streamlining operations across multiple branches.}
-    \resumeItemListEnd
-    \resumeSubSubheading{Dabeeb App}{}
-      \resumeItemListStart
-        \resumeItem{Developed a comprehensive mobile application using React Native, Express.js, and Hasura for scooter and bicycle rentals. Implemented robust user authentication, real-time availability tracking, and integrated secure payment processing.}
-    \resumeItemListEnd
-    \resumeSubheading
-      {Jr. Software Engineer @ Gigalabs}{Feb 2021 - Mar 2022}{}{}\vspace{-12pt}
-      \resumeSubSubheading{Linesheets}{}
-      \resumeItemListStart
-        \resumeItem{Contributed to the development of an online platform for customizing and sharing product collections. Implemented key features using React for the frontend and Express.js for the backend, enhancing user experience and platform functionality.}
-    \resumeItemListEnd
-    \resumeSubSubheading{New York Adventure Club}{}
-      \resumeItemListStart
-        \resumeItem{Worked on a tour company platform providing insider access to city secrets. Developed both frontend and backend components using React and Express.js, focusing on improving tour booking and management systems.}
-    \resumeItemListEnd
-    \resumeSubSubheading{Bukit}{}
-      \resumeItemListStart
-        \resumeItem{Developed components for a marketplace connecting end-users to operators via white-labeled SaaS technology. Utilized Next.js for the frontend, Express.js for the backend, and MongoDB for data management, contributing to a seamless aggregator experience.}
-    \resumeItemListEnd
-    \resumeSubSubheading{Furniture Bank California}{}
-      \resumeItemListStart
-        \resumeItem{Developed a platform connecting people with excess furniture to those in need. Implemented frontend and backend solutions using Next.js and MongoDB, streamlining the furniture donation and distribution process.}
-    \resumeItemListEnd
-      \resumeSubSubheading{Financial Tracking System}{}
-      \resumeItemListStart
-        \resumeItem{Contributed to the frontend development of a transaction and inventory management system using React. Focused on creating intuitive interfaces for financial data visualization and management. (Client did not disclose the name of the project)}
-    \resumeItemListEnd
-  \resumeSubHeadingListEnd
-
+%----------Skills----------
 \section{Skills}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-    {Languages \& Frameworks}{}{}{}\vspace{-12pt}
-      \resumeItemListStart
-        \resumeItem{JavaScript, TypeScript, React, Next.js, React Native, Expo, Node.js, Express.js, GraphQL, HTML, CSS, Redux, Tailwind CSS, Bootstrap, and SQL.}
-    \resumeItemListEnd
-    \resumeSubheading
-      {Tools \& Platforms}{}{}{}\vspace{-12pt}
-      \resumeItemListStart
-        \resumeItem{VS Code, Git, Gitlab, Github, Postman, Docker, MongoDB, PostgreSQL, Firebase, Vercel, Heroku, Hasura, Linux, Microsoft Office, Mattermost, Slack, Trello, Jira, and Asana.}
-    \resumeItemListEnd
-  \resumeSubHeadingListEnd
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    \textbf{Languages:} JavaScript, TypeScript, HTML, CSS, SQL \\
+    \textbf{Frameworks \& Libraries:} React, Next.js, React Native, Expo, Node.js, Express.js, Redux Toolkit, Context API, GraphQL, Jest \\
+    \textbf{Styling:} Tailwind CSS, shadcn, Material UI, Ant Design, Bootstrap, React Native Paper \\
+    \textbf{Databases:} MongoDB, PostgreSQL, MySQL, Firebase \\
+    \textbf{Tools \& Platforms:} Git, GitHub, GitLab, GitHub Actions, Docker, Postman, VS Code, Vercel, Heroku, Hasura \\
+    \textbf{Project Management:} Jira, Trello, Asana, Slack, Mattermost
+  }}
+\end{itemize}
 
+%----------Experience----------
+\section{Experience}
+\resumeSubHeadingListStart
 
-%-----------PERSONAL PROJECTS-----------
-\section{Personal Projects}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-    {Taskify}{}{}{}\vspace{-12pt}
-      \resumeItemListStart
-        \resumeItem{Developed a collaborative task management platform using Next.js and PostgreSQL. Implemented features for organization and board creation, card management with drag-and-drop functionality, and integrated payment processing.}
+  \resumeSubheading
+    {Software Engineer}{May 2022 -- Present}
+    {Dabeeb}{Riyadh, Saudi Arabia}
+    \resumeItemListStart
+      \resumeItem{Led the development of \textbf{Dabeeb ARS}, a peer-to-peer accommodation rental app built with Expo and React Native, implementing core modules including property listings, booking flows, user reviews, and secure payment handling.}
+      \resumeItem{Played a key role in \textbf{Dabeeb FMS}, a React-based fleet management dashboard, delivering features for real-time vehicle tracking, maintenance scheduling, and performance analytics.}
+      \resumeItem{Contributed to \textbf{Dabeeb ERP}, a multi-branch inventory management system using React Native, Express.js, and VendHQ API integration to streamline stock operations.}
+      \resumeItem{Worked on \textbf{Dabeeb App}, a scooter and bicycle rental platform with GPS-based availability, payment integration, and user onboarding flows.}
     \resumeItemListEnd
-    \resumeSubheading
-    {Pixel Muse}{}{}{}\vspace{-12pt}
-      \resumeItemListStart
-        \resumeItem{Developed a suite of automated bots using Next.js and Node.js for generating and distributing random color pixel images across Twitter and Telegram platforms. Implemented image generation algorithms and social media API integrations.}
-    \resumeItemListEnd
-    \resumeSubheading
-    {Phanox}{}{}{}\vspace{-12pt}
-      \resumeItemListStart
-        \resumeItem{Developed a full-stack e-commerce platform specializing in headphone sales using Next.js, Sanity, and Stripe. Implemented features including product cataloging, user authentication, shopping cart functionality, and secure payment processing.}
-    \resumeItemListEnd
-      \resumeSubheading
-      {Bookit}{}{}{}\vspace{-12pt}
-      \resumeItemListStart
-        \resumeItem{Created an online reservation system using Next.js, Stripe, and MongoDB to streamline the booking process for hospitality businesses. Implemented real-time availability updates, user account management, and integrated payment gateway for seamless transactions.}
-    \resumeItemListEnd
-    \resumeSubheading
-    {Shopit}{}{}{}\vspace{-12pt}
-      \resumeItemListStart
-        \resumeItem{Built an e-commerce application using React, Express.js, Stripe, and MongoDB. Developed features such as product search, filtering, user reviews, and order management to enhance the online shopping experience.}
-    \resumeItemListEnd
-  \resumeSubHeadingListEnd
 
-    %-----------EDUCATION-----------
+  \resumeSubheading
+    {Junior Software Engineer}{Feb 2021 -- Mar 2022}
+    {Gigalabs}{Lahore, Pakistan}
+    \resumeItemListStart
+      \resumeItem{Enhanced and maintained \textbf{Linesheets}, a platform for showcasing curated product collections, ensuring a smooth browsing and sharing experience using React and Express.js.}
+      \resumeItem{Contributed to \textbf{New York Adventure Club}, a tour booking platform featuring an interactive map and responsive interface to improve user engagement.}
+      \resumeItem{Worked on core modules of \textbf{Bukit}, a SaaS marketplace solution built with Next.js and Express.js, focusing on vendor onboarding and scalable operator management.}
+      \resumeItem{Implemented frontend components in \textbf{Furniture Bank California}, improving item listing and request workflows to support the platform’s mission.}
+      \resumeItem{Developed components for a \textbf{Financial Tracking System}, optimizing interfaces for transaction monitoring and inventory visualization using React.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%----------Education----------
 \section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Gujrat Institute of Management Sciences (PMAS AAUR)}{Gujrat, Pakistan}
-      {Bachelor of Science (Computer Science)}{}
-  \resumeSubHeadingListEnd
-
-%-----------ACADEMIC PROJECTS-----------
-\section{Academic Project}
-  \resumeSubHeadingListStart
-      \resumeSubheading
-      {Find Friend (Final Year Project)}{}{}{}\vspace{-12pt}
-      \resumeItemListStart
-        \resumeItem{Developed a mobile application using React Native and Firebase for real-time chat and location sharing. Implemented features including user-to-user messaging, real-time location tracking with Google Maps integration, and route visualization.}
-    \resumeItemListEnd
-  \resumeSubHeadingListEnd
-
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Bachelor of Science in Computer Science}{2016 -- 2021}
+    {Gujrat Institute of Management Sciences (PMAS AAUR)}{Gujrat, Pakistan}
+\resumeSubHeadingListEnd
 
 \end{document}
